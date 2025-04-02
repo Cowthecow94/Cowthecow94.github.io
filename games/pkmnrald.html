@@ -1,0 +1,20 @@
+<title>pkmnrald</title>
+<link rel="stylesheet" href="https://cowthecow94.github.io/mainstyles.css">
+<body>
+<button class="button button2" onclick="window.location.href='https://cowthecow94.github.io/';">Back</button> <br>
+<button class="button button2" onclick="openFullscreen();">Fullscreen pkmnrald</button> <br>
+<br>
+<embed id="pkmnrald_embed" src="https://mexi.rest/loader.html?url=/schoolwork/pkmnrald/index.html" width=100% height=100% allowfullscreen></embed>
+</body>
+<script>
+var elem = document.getElementById("pkmnrald_embed");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
