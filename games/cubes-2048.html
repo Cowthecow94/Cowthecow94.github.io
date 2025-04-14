@@ -1,0 +1,20 @@
+<title>Cubes 2048</title>
+<link rel="stylesheet" href="https://cowthecow94.github.io/mainstyles.css">
+<body>
+<button class="button button2" onclick="window.location.href='https://cowthecow94.github.io/';">Back</button> <br>
+<button class="button button2" onclick="openFullscreen();">Fullscreen Cubes 2048</button> <br>
+<br>
+<embed id="ships_embed" src="https://www.crazygames.com/embed/cubes-2048-io" width=100% height=100% allowfullscreen></embed>
+</body>
+<script>
+  var elem = document.getElementById("ships_embed");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
